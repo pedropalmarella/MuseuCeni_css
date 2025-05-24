@@ -1,0 +1,93 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contato.css">
+  <link rel="stylesheet" href="contato_phone.css">
+  <link rel="stylesheet" href="curiosidades_tablet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bahianita&display=swap" rel="stylesheet">
+  <title>MuseuCeni</title>
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" id="menu-toggle" style="display:none;">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <nav class="menu">
+      <a href="../index.html">HISTÓRIA 📖</a>
+      <a href="../titulos/titulos.html">TÍTULOS 🏆</a>
+      <a href="../curiosidades/curiosidades.html">CURIOSIDADES 🔍</a>
+      <a href="../top gols/top-gols.html">TOP GOLS ⚽</a>
+      <a href="#" class="active">CONTATO 📱</a>
+    </nav>
+  </header>
+
+  <div class="bem-vindo">
+    <h2>CURIOSIDADES DE CENI</h2>
+  </div>
+
+   <div class="form-container">
+        <form id="modernForm">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" placeholder="País onde reside">
+                </div>
+
+                <div class="form-group">
+                    <span class="label-group">Gênero:</span>
+                    <div class="radio-group">
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" id="feminino" name="genero" value="feminino">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="foto">Foto (opcional):</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fale um pouco sobre você</legend>
+
+                <div class="form-group">
+                    <label for="time_favorito">Time Favorito:</label>
+                    <input type="text" id="time_favorito" name="equipe" placeholder="Ex: Flamengo, Corinthians">
+                </div>
+
+                <div class="form-group">
+                    <label for="jogador_favorito">Jogador Favorito:</label>
+                    <input type="text" id="jogador_favorito" name="piloto" placeholder="Ex: Pelé, Marta">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit">Enviar Informações</button>
+            </div>
+        </form>
+    </div>

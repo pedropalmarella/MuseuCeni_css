@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bahianita", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  background-color: rgb(242, 84, 89);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.menu a:hover {
+  background-color: rgb(242, 84, 89);
+  transform: translateY(5px);
+  color: #fff;
+}
+
+.menu a.active {
+  background-color: #006cb5;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bem-vindo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(242, 84, 89);
+}
+
+.bem-vindo h2 {
+  font-size: 52px;
+}
+
+.table-section-title {
+  font-family: 'Bahianita', cursive;
+  font-size: 42px;
+  color: #000;
+  margin: 30px 20px 15px 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+}
+
+.styled-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 20px 7% 20px 7%;
+}
+
+.styled-table thead tr {
+  background-color: #006cb5;
+  color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 14px 18px;
+  border: none;
+  text-align: center;
+}
+
+.styled-table td {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table th {
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type td {
+  border-bottom: none;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #e9e9e9;
+}

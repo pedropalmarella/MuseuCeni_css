@@ -1,0 +1,77 @@
+@media (max-width: 930px) {
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    color: #333;
+}
+
+@media (max-width: 930px) {
+    .hamburger {
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+        padding: 10px;
+        text-align: end;
+        background-color: #006cb5;
+        color: #fff;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-toggle:checked + .hamburger + .menu {
+        display: flex;
+    }
+
+    .form-container {
+        padding: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    legend {
+        font-size: 1.5em;
+    }
+
+    .form-group label,
+    .form-group .label-group {
+        font-size: 1.1em;
+        word-break: break-word;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    select,
+    textarea {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .radio-group label {
+        font-size: 0.9em;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .form-actions {
+        text-align: center;
+    }
+}
+}

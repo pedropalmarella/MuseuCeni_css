@@ -1,0 +1,62 @@
+@media (max-width:930px){
+    .hamburger {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: end;
+    background-color: #006cb5;
+    color:#fff;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
+  .first-content {
+    display: none;
+  }
+
+  .first-content-mobile {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 7% 20px 7%;
+  }
+
+  .first-img-mobile {
+    background-image: url(../assets/grade1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+  }
+
+  .first-content-mobile iframe {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  }
+
+  img {
+    margin-top: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  }
+
+ .second-content {
+    padding: 20px 7% 20px 7%;
+
+  }
+
+  .second-content iframe {
+    width: 100%;
+  }
+}

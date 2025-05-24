@@ -1,0 +1,37 @@
+@media (max-width: 930px) {
+  .hamburger {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: end;
+    background-color: #006cb5;
+    color: #fff;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menu-toggle:checked+.hamburger+.menu {
+    display: flex;
+  }
+
+  .styled-table {
+    width: 95%;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 10px 12px;
+  }
+
+  .table-section-title {
+    font-size: 1.5em;
+    margin: 20px 10px 10px 10px;
+  }
+}
